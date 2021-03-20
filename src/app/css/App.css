@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,32 +14,58 @@ body {
     animation: homepage__logo-spin infinite 15s linear;
   }
 }
+.btn {
+  margin-bottom: 30px;
+}
+.btn button {
+  background-color: #6499a2;
+  border: none;
+  color: white;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
 .section {
   height: 100vh;
   width: 100vw;
+  display: flex;
 }
-.section__part {
-  width: 50%;
+.section__header {
+  width: 40%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section__part .homepage {
+.section__header .homepage {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.section__part .homepage__logo {
+.section__header .homepage__logo {
   height: 350px;
   pointer-events: none;
 }
-.section__part .homepage__title {
+.section__header .homepage__title {
   font-size: 48px;
   color: white;
   margin-top: 50px;
   font-family: "Alegreya Sans", sans-serif;
+  font-weight: 900;
   text-align: center;
+}
+.section__rooms {
+  padding: 30px;
+  width: 20%;
+}
+.section__monsters {
+  padding: 30px;
+  width: 20%;
 }
 .section .section__part--blue {
   background-color: #6499a2;
@@ -52,6 +78,17 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+.rooms p {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.monsters p {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 20px;
+  margin: 5px 0;
 }
 
 /*# sourceMappingURL=App.css.map */

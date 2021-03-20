@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500;900&display=swap");
 
 * {
     margin: 0;
@@ -16,11 +16,28 @@ body {
     }
 }
 
+.btn {
+    margin-bottom: 30px;
+    button {
+        background-color: #6499a2;
+        border: none;
+        color: white;
+        font-family: "Alegreya Sans", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
+
 .section {
     height: 100vh;
     width: 100vw;
-    &__part {
-        width: 50%;
+    display: flex;
+    &__header {
+        width: 40%;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -38,9 +55,18 @@ body {
                 color: white;
                 margin-top: 50px;
                 font-family: "Alegreya Sans", sans-serif;
+                font-weight: 900;
                 text-align: center;
             }
         }
+    }
+    &__rooms {
+        padding: 30px;
+        width: 20%;
+    }
+    &__monsters {
+        padding: 30px;
+        width: 20%;
     }
     .section__part--blue {
         background-color: #6499a2;
