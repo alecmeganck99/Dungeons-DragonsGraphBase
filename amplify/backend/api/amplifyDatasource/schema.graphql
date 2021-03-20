@@ -1,0 +1,18 @@
+type Treasures @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  value: String
+}
+
+type Monsters @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  cr: String
+  name: String
+  type: String
+  size: String
+}
+
+type Rooms @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+}

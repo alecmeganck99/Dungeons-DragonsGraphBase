@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f3f2f0;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+}
+.section__part {
+  width: 50%;
+  height: 100%;
+}
+.section .blue {
+  background-color: #6499a2;
+}
+
+/*# sourceMappingURL=App.css.map */
