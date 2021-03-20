@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,13 @@
 }
 
 body {
-    background: #f3f2f0;
+    background: white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .homepage__logo {
+        animation: homepage__logo-spin infinite 15s linear;
+    }
 }
 
 .section {
@@ -14,8 +22,36 @@ body {
     &__part {
         width: 50%;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .homepage {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            &__logo {
+                height: 350px;
+                pointer-events: none;
+            }
+            &__title {
+                font-size: 48px;
+                color: white;
+                margin-top: 50px;
+                font-family: "Alegreya Sans", sans-serif;
+                text-align: center;
+            }
+        }
     }
-    .blue {
+    .section__part--blue {
         background-color: #6499a2;
+    }
+}
+
+@keyframes homepage__logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }
