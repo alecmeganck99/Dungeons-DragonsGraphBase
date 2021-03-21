@@ -5,6 +5,7 @@ import logo from '../images/logo.svg';
 import "../css/App.css";
 import AddRoom from "../components/AddRoom";
 import AddMonster from "../components/AddMonster";
+import AddTreasure from "../components/AddTreasure";
 
 function Home() {
   return (
@@ -21,6 +22,9 @@ function Home() {
         </div>
         <div className="section__monsters">
           <AddMonster />
+        </div>
+        <div className="section__treasures">
+          <AddTreasure />
         </div>
       </div>
     </DocumentTitle >

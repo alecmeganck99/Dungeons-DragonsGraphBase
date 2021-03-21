@@ -27,7 +27,7 @@ function AddRoom() {
       </div>
       <div className="rooms">
         {rooms.map(room => (
-          <p>{room.name}</p>
+          <h2>{room.name}</h2>
         ))}
       </div>
     </>

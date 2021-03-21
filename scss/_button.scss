@@ -1,0 +1,21 @@
+.btn {
+    margin-bottom: 30px;
+    button {
+        background-color: #6499a2;
+        border: none;
+        color: white;
+        font-family: "Alegreya Sans", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        transition: 0.2s;
+    }
+    button:hover {
+        background-color: #fff;
+        color: #6499a2;
+        outline: 2px solid #6499a2;
+    }
+}

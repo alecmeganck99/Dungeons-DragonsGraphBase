@@ -30,7 +30,12 @@ function AddMonster() {
       </div>
       <div className="monsters">
         {monsters.map(monster => (
-          <p>{monster.name}</p>
+          <div className="monsters__info">
+            <h2>{monster.name}</h2>
+            <p>{monster.cr}</p>
+            <p>{monster.type}</p>
+            <p>{monster.size}</p>
+          </div>
         ))}
       </div>
     </>
