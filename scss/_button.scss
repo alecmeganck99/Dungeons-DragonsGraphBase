@@ -1,7 +1,7 @@
 .btn {
     margin-bottom: 30px;
     button {
-        background-color: #6499a2;
+        background-color: #d9c485;
         border: none;
         color: white;
         font-family: "Alegreya Sans", sans-serif;
@@ -15,7 +15,47 @@
     }
     button:hover {
         background-color: #fff;
-        color: #6499a2;
-        outline: 2px solid #6499a2;
+        color: #d9c485;
+        outline: 2px solid #d9c485;
     }
+}
+
+.homepage--links {
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #d9c485;
+    color: white;
+    transition: 0.2s;
+}
+.homepage--links:hover {
+    background-color: white;
+    color: #6499a2;
+}
+
+.homepage--links--blue {
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #6499a2;
+    color: white;
+    transition: 0.2s;
+}
+.homepage--links--blue:hover {
+    background-color: white;
+    color: #d9c485;
 }

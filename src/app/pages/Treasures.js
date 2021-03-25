@@ -4,10 +4,11 @@ import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
 
 import logo from '../images/logo.svg';
 import "../css/App.css";
+import AddTreasure from "../components/AddTreasure";
 
-function Home() {
+function Treasures() {
   return (
-    <DocumentTitle title="Dungeons & Dragons | Home">
+    <DocumentTitle title="Dungeons & Dragons | Treasures">
       <div className="section">
         <div className="section__header section__part--blue">
           <div className="homepage">
@@ -17,18 +18,12 @@ function Home() {
             </Link>
           </div>
         </div>
-        <Link className="homepage--links" to="/rooms">
-          <p>Rooms</p>
-        </Link>
-        <Link className="homepage--links--blue" to="/monsters">
-          <p>Monsters</p>
-        </Link>
-        <Link className="homepage--links" to="/treasures">
-          <p>Treasures</p>
-        </Link>
+        <div className="section__treasures">
+          <AddTreasure />
+        </div>
       </div>
     </DocumentTitle >
   );
 }
 
-export default Home;
+export default Treasures;

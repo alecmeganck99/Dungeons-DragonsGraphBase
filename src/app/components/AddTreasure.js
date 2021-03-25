@@ -30,7 +30,7 @@ function AddTreasure() {
         {treasures.map(treasure => (
           <div className="treasures__info">
             <h2>{treasure.name}</h2>
-            <p>{treasure.value}</p>
+            <p>{treasure.value} gp</p>
           </div>
         ))}
       </div>
